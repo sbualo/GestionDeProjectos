@@ -7,7 +7,7 @@ codirector, % Uncomment to add a codirector to the title page
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Alacena Inteligente} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 \posgrado{Carrera de Especialización en Sistemas Embebidos} 
@@ -17,7 +17,7 @@ codirector, % Uncomment to add a codirector to the title page
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Santiago Andrés Bualó} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Nombre del Director}
@@ -27,8 +27,8 @@ codirector, % Uncomment to add a codirector to the title page
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{-}
+\empresaCliente{-}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -38,9 +38,9 @@ codirector, % Uncomment to add a codirector to the title page
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{30 de abril de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{18 de junio de 2021} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
+\fechaINICIO{1 de Septiembre de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{1 de Octubre de 2023} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{15 de Marzo de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de un calefón}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} h de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de alacena inteligente capaz de mantener un inventario de los objetos dentro de la misma, detectando los productos que ingresan y egresan en tiempo real, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} h de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -116,51 +116,43 @@ Se adjunta a esta acta la planificación inicial.
 \label{sec:descripcion}
 
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección. En cada entrega parcial deben eliminar los comandos begin y end del bloque consigna de las secciones que hayan completado.
 
-El objetivo es que el lector en una o dos páginas entienda de qué trata el proyecto y cuáles son sus desafíos, cuál es la motivación para realizarlo y su importancia.
+El presente trabajo práctico busca implementar un sistema de alacena inteligente, el cual pueda mantener un inventario de los objetos dentro del mismo de forma autónoma y automática, mediante la detección de los productos que ingresan y/o egresan a la despensa.
 
-Se debe introducir el contexto del proyecto, el estado del arte en la temática, describir la propuesta de valor, cúal es el problema que atiende y cuál es la solución que se propone. Se debe dar una descripción funcional de la solución que incluya un diagrama en bloques.
+¿Cuantas veces nos ha ocurrido que estamos en la fila del supermercado con la sensación de que nos estamos olvidando algo? El presente proyecto busca subsanar esta problemática. Gracias al control de inventario propuesto, va a ser posible tener siempre a mano el estado de nuestra despensa o alacena. Esto nos va a permitir realizar una gestión mejorada del inventario de nuestro hogar, así como entender las necesidades de consumo diario, semanal, quincenal o mensual de los distintos productos presentes en nuestro hogar; permitiéndonos realizar listas de supermercado de forma periódica y automática.
 
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
+A día de hoy las grandes industrias están implementando mejoras y soluciones en los hogares de forma constante, tratando de modernizar todos los electrodomésticos, ambientes y elementos. Sin embargo, cuando nos paramos sobre nuestra problemática planteada, nos damos cuenta de que hasta la fecha, no existe una solución propuesta que sea clara, concisa y , por sobre todo, útil para la sociedad. Si nos centramos en soluciones concretas, hasta ahora lo más parecido a lo que planteamos, consta de una solución propuesta por Samsung integrado a sus heladeras, el cual consta de una aplicación que lleva un inventariado de la misma, pero de forma manual: es el usuario quien ingresa a mano qué objetos ingresa, y qué objetos utiliza.
+
+Nuestra propuesta planea no solo superar con creces la oferta actual del mercado, buscando subsanar la problemática desde la raíz, sino que también tiene como objetivo el sentar precedentes para ser el principio de numerosos avances en cuanto a esta tecnología, la cual continúen mejorando la calidad de vida de las personas, impulsando un nuevo paradigma. 
+
+Este nuevo paradigma, consiste en la modernizacion de un espacio de los hogares que hasta la fecha no se había manifestado un cambio a nivel hogareño. El concepto de inventario ya está más que establecido en  industrias y empresas, las cuales se ven altamente beneficiadas en productividdad gracias al ahorro de tiempo que esto conlleva. Ese mismo beneficio es el que vamos a estar trasladando a hogares. Con esta nueva gestion de inventario en las alacenas, se pueden automatizar un sinfin de procesos y tomas de decisiones propias del hogar que quitan tiempo personal. Este inventario automático, va a permitir mejoras en los siguientes aspectos:
 
 \begin{itemize}
-	\item ¿Cuál es el contexto del proyecto, es un emprendimiento personal, un proyecto para una empresa, es parte del programa de vinculación con empresas del posgrado?
-	\item ¿Existen o aplican condiciones especiales al proyecto, financiamiento de algún programa público o privado, acuerdos de confidencialidad, acuerdos sobre la propiedad intelectual de los entregables u otros?
-	\item ¿Cómo se compara la solución propuesta con el estado del arte en el campo de aplicación? ¿En qué aspectos destaca?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está la solución que se propone?
-	\item ¿Cuáles son las características del cliente (el adoptante de los entregables del proyecto) qué valora, qué necesita?
-	\item ¿Por dónde pasa la innovación?
+    \item Entender los consumos del hogar de los distintos productos.
+    \item Interpretar los tiempos de reposición de cada producto, lo que permite generar listas de compra para diferentes períodos.
+    \item Conocer que productos se tiene, para tomar decisiones sobre la siguientes comidas.
 \end{itemize}
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y descripción funcional de la solución propuesta.
-
-Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''.  La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+Para llevar a cabo este proyecto, se propone un módulo integral capaz de detectar el ingreso/egreso de los productos hacia la despensa, computar la cantidad de productos, y mantener el inventario dentro de si mismo. Además, deberá tener la capacidad para comunicarse con la red, no solo para posibilitar detectar un mayor numero de elementos, sino también para poder llevar a cabo un backup del inventario interno, de forma tal de poder disponibilizarlo al usuario desde otra interfaz (por ejemplo web o aplicación móvil). 
+Todo va a estar orquestado por un núcleo de procesamiento ( microcontrolador), el cual se comunicará con un lector de código de barras para detectar al producto. Luego, mediante llamados de API, se va a identificar al producto, y se va a proceder a realizar el cómputo para modificar el inventario.
+El dispositivo deberá ser alimentado mediante una batería, ya sea de venta comercial o recargable, de forma tal de independizar al usuario sobre la posicion en la cual debe instalar al producto.
+A continuación podemos ver en la figura \ref{fig:diagBloques} un diagrama de bloques sobre el prototipo:
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
-\caption{Diagrama en bloques del sistema}
+\includegraphics[width=.75\textwidth]{./Figuras/DiagramaBloque.png}
+\caption{Diagrama en bloques del sistema propuesto.}
 \label{fig:diagBloques}
 \end{figure}
 
 \vspace{25px}
 
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
+\newpage
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red} 
- 
-\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código. 
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces solo dejarla en el rol más importante. 
-
-Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente. Si una persona es el Responsable, no debe ser colocado también como miembro del equipo.
-
+A continuación se listan a todas las partes involucradas al proyecto
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -169,75 +161,71 @@ Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
+Auspiciante   &           \authorname         &          -    	&        	\\ \hline
 Cliente       & \clientename      &\empclientename	&        	\\ \hline
 Impulsor      &                   &              	&        	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
 Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Usuario final &  Acreedores de alacena                 &              	&        	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
 
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
 \begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
+	\item Auspiciante: Siendo un proyecto personal, todos los gastos y/o beneficios seran incurridos por el autor del proyecto.
 	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
+	\item Responsable: \authorname   va a ser el responsable del proyecto, siendo el autor del mismo.
+ 	\item Usuario final: Como el proyecto esta orientado como solución para los hogares, el usuario final serán todas aquellas personas dueñas de una alacena.
+ 
 \end{itemize}
-
-\end{consigna} % este comando se debe borrar para la entrega, junto con la contraparte \begin{consigna}{red}
 
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
+El propósito de este proyecto es impulsar nuevas tecnologías dentro del hogar mediante la modernización de uno de los lugares que más se utiliza dentro del hogar, posibilitando una mejor gestión de los distintos productos que se guardan dentro. Gracias a esta nueva metodología se busca que los usuarios encuentren una nueva forma mucho mas sencilla y eficiente de la toma de decisiones en las compras del hogar.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+En ese proyecto se incluye :
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+\begin{itemize}
+	\item Un dispositivo que detecta los objetos a través de una lectura del código de barras
+	\item Ese dispositivo debe poder detectar de qué objeto se trata, y luego llevar a cabo las cuentas relacionadas al inventario.
+ 	\item El desarrollo de una interfaz externa al dispositivo, a modo de consultar/configurar aspectos del dispositivo, tales como el inventario.
+  \item El desarrollo de una placa integrada como prototipo.
+  \item La configuración red para que el dispositivo pueda utilizar APIs para consultar el código de barras.
+  \item El sistema de alimentación propio del prototipo.
+  
+\end{itemize}
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
+No serán parte del proyecto los siguientes:
 
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
-
-\end{consigna}
-
+\begin{itemize}
+	\item No se desarrollara un producto final para ser comercializado.
+	\item No se contemplará almacenamiento externo o almacenamiento en la nube.
+  
+\end{itemize}
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+
+Para el desarrollo del presente proyecto se supone que:
 
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+	\item El dinero disponible será suficiente para la adquisición de los materiales requeridos.
+	\item Se presume que todos los componentes originales con los que es planteado el proyecto tendrán stock.
+ \item Todos los componentes se consiguen de forma local sin ningún impedimento.
+  
 \end{itemize}
 
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
+-Hasta aqui primera entrega-
+\newpage
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}

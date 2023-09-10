@@ -7,7 +7,7 @@ codirector, % Uncomment to add a codirector to the title page
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Alacena Inteligente} 
+\titulo{Detector automático de objetos para despensa inteligente} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 \posgrado{Carrera de Especialización en Sistemas Embebidos} 
@@ -17,7 +17,7 @@ codirector, % Uncomment to add a codirector to the title page
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Santiago Andrés Bualó} 
+\autor{Ing. Santiago Andrés Bualó} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Nombre del Director}
@@ -38,9 +38,9 @@ codirector, % Uncomment to add a codirector to the title page
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{1 de Septiembre de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{1 de Octubre de 2023} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de Marzo de 2024}	%Fecha de defensa pública del trabajo final
+\fechaINICIO{1 de septiembre de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{1 de octubre de 2023} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{15 de marzo de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -120,23 +120,23 @@ Se adjunta a esta acta la planificación inicial.
 
 El presente trabajo práctico busca implementar un sistema de alacena inteligente, el cual pueda mantener un inventario de los objetos dentro de la misma de forma autónoma y automática, mediante la detección de los productos que ingresan y/o egresan a la despensa en tiempo real, en el instante en que se agregan o se remueven.
 
-¿Cuantas veces nos ha ocurrido que estamos en la fila del supermercado con la sensación de que nos estamos olvidando algo? Este proyecto busca subsanar esa misma problemática. Gracias al control de inventario propuesto, va a ser posible tener siempre a mano el estado de nuestra despensa o alacena. Esto nos va a permitir realizar una gestión mejorada de las cosas que tenemos de nuestro hogar, así como entender las necesidades de consumo diario, semanal, quincenal o mensual de los distintos productos presentes en nuestro hogar; permitiéndonos realizar listas de supermercado de forma periódica y automática. Sumado a esto, vamos a tener la posibilidad de consultar este estado desde cualquier parte, mediante el acceso desde una aplicación. 
+Se ha observado que es una de las problemáticas mas frecuentes en el marco de las compras cotidianas para el hogar, es que las personas muestran una tendencia a olvidarse de las cosas que deben comprar. El objetivo principal de este proyecto es solventar esta problemática aplicando un método que la industria viene aplicando hace ya varios años: control de inventario. Ésto será realizado de forma automática mediante un conjunto de sensores capaces de detectar los objetos que ingresan o egresan a la despensa, de forma tal de poder llevar a cabo un conteo de los objetos presentes o faltantes, permitiendo tener siempre a mano el estado de la despensa (o alacena), lo que supondrá una mejora en la gestión de las cosas que se tienen en el hogar. También permitirá entender las necesidades de consumo diario, semanal, quincenal o mensual de los distintos productos presentes en el hogar, lo que facilitará la creación de listas de supermercado de forma periódica y automática. Además, se podrá consultar este estado desde cualquier lugar, mediante el acceso desde una aplicación. 
 
-A día de hoy las grandes industrias están implementando mejoras y soluciones en los hogares de forma constante, tratando de modernizar todos los electrodomésticos, ambientes y elementos. Sin embargo, cuando nos paramos sobre nuestra problemática planteada, nos damos cuenta de que hasta la fecha, no existe una solución propuesta que sea clara, concisa y , por sobre todo, útil para la sociedad en estos aspectos que mencionamos. Si nos centramos en soluciones concretas, hasta ahora lo más parecido a lo que se ha planteado planteado, consta de una solución propuesta por Samsung: ha integrado a sus heladeras una aplicación que lleva un inventariado de la misma, pero de forma manual, siendo el usuario quien ingresa a mano qué objetos ingresa, y qué objetos utiliza o extrae.
+A día de hoy las grandes industrias están implementando mejoras y soluciones en los hogares de forma constante, tratando de modernizar todos los electrodomésticos, ambientes y elementos. Sin embargo, cuando nos paramos sobre nuestra problemática planteada,en las soluciones propuestas hasta la fecha, no existen soluciones que aborden esta problemática de forma clara, concisa y , por sobre todo, útil para la sociedad. En particular, hasta la fecha, lo más parecido a lo que se ha planteado, consta de una solución propuesta por Samsung: ha integrado a sus heladeras una aplicación que lleva un inventariado de la misma, pero de forma manual, siendo el usuario quien ingresa a mano qué objetos ingresa, y qué objetos utiliza o extrae.
 
 Nuestra propuesta planea no solo superar con creces la oferta actual del mercado, buscando subsanar la problemática desde la raíz, sino que también tiene como objetivo el sentar precedentes para ser el principio de numerosos avances en cuanto a esta tecnología, la cual continúen mejorando la calidad de vida de las personas, impulsando un nuevo paradigma. 
 
-Este nuevo paradigma, consiste en la modernización de un espacio de nuestras casas que hasta la fecha no se había manifestado un cambio a nivel hogareño. El concepto de inventario ya está más que establecido en  industrias y empresas, las cuales se ven altamente beneficiadas en productividad gracias al ahorro de tiempo que esto conlleva. Ese mismo beneficio es el que vamos a estar trasladando a hogares. Con esta nueva gestión de inventario en las alacenas, se pueden automatizar un sinfín de procesos y tomas de decisiones propias del hogar que quitan tiempo personal. Este inventario automático, va a permitir mejoras en los siguientes aspectos:
+Este nuevo paradigma, consiste en rediseñar las alacenas, incorporando tecnología del siglo XXI. El concepto de inventario ya está más que establecido en  industrias y empresas, las cuales se ven altamente beneficiadas en productividad gracias al ahorro de tiempo que esto conlleva entender no solo la distribución de los objetos, sino también cuando es necesario reponerlos. Ese mismo beneficio es el que vamos a estar trasladando a los hogares. Con esta nueva gestión de inventario en las alacenas, se pueden automatizar un sinfín de procesos y tomas de decisiones propias del hogar que quitan tiempo personal. Este inventario automático, va a permitir mejoras en los siguientes aspectos:
 
 \begin{itemize}
     \item Entender los consumos del hogar de los distintos productos.
     \item Interpretar los tiempos de reposición de cada producto, lo que permite generar listas de compra para diferentes períodos.
-    \item Conocer que productos se tiene, para tomar decisiones sobre la siguientes comidas.
+    \item Conocer qué productos se tiene en tiempo real, permitiendo tomar decisiones sobre los menús para las siguientes comidas.
 \end{itemize}
 
-Para llevar a cabo este proyecto, se propone un módulo integral capaz de detectar el ingreso/egreso de los productos hacia la despensa, computar la cantidad de productos, y mantener el inventario dentro de si mismo. Además, deberá tener la capacidad para comunicarse con la red, no solo para posibilitar detectar un mayor numero de elementos, sino también para poder llevar a cabo un backup del inventario interno, de forma tal de poder disponibilizarlo al usuario desde otra interfaz (por ejemplo web o aplicación móvil). 
-Todo va a estar orquestado por un núcleo de procesamiento ( microcontrolador), el cual se comunicará con un lector de código de barras para detectar al producto. Luego, mediante llamados de API, se va a identificar al producto, y se va a proceder a realizar el cómputo para modificar el inventario.
-El dispositivo deberá ser alimentado mediante una batería, ya sea de venta comercial o recargable, de forma tal de independizar al usuario sobre la posición en la cual debe instalar al producto.
+Para llevar a cabo este proyecto, se propone un módulo integral capaz de detectar el ingreso/egreso de los productos hacia la despensa, computar la cantidad de productos y mantener el inventario dentro de si mismo. Además, deberá tener la capacidad para comunicarse con la red, no solo para posibilitar detectar un mayor número de elementos, sino también para poder llevar a cabo un respaldo del inventario interno, de forma tal de poder disponibilizarlo al usuario desde otra interfaz (por ejemplo web o aplicación móvil). 
+Todo va a estar orquestado por un núcleo de procesamiento (microcontrolador), el cual se comunicará con un lector de código de barras para detectar al producto. Luego, mediante llamados de API, se va a identificar al producto, y se va a proceder a realizar el cómputo para modificar el inventario.
+El dispositivo deberá ser alimentado mediante una batería, ya sea desechable o recargable, de forma tal de independizar al usuario sobre la posición en la cual debe instalar al producto.
 A continuación podemos ver en la figura \ref{fig:diagBloques} un diagrama de bloques sobre el prototipo:
 
 \begin{figure}[htpb]
@@ -153,7 +153,7 @@ A continuación podemos ver en la figura \ref{fig:diagBloques} un diagrama de bl
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-A continuación se listan a todas las partes involucradas al proyecto
+A continuación se listan a todas las partes involucradas al proyecto:
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -163,8 +163,6 @@ A continuación se listan a todas las partes involucradas al proyecto
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
 Auspiciante   &           \authorname         &          -    	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
@@ -175,9 +173,9 @@ Usuario final &  Acreedores de alacena                 &              	&        
 
 
 \begin{itemize}
-	\item Auspiciante: Siendo un proyecto personal, todos los gastos y/o beneficios seran incurridos por el autor del proyecto.
+	\item Auspiciante: siendo un proyecto personal, todos los gastos y/o beneficios serán incurridos por el autor del proyecto.
 	\item Responsable: \authorname, quien va a ser el responsable del proyecto, siendo el autor del mismo.
- 	\item Usuario final: Como el proyecto esta orientado como solución para los hogares, el usuario final serán todas aquellas personas dueñas de una alacena.
+ 	\item Usuario final: como el proyecto esta orientado como solución para los hogares, el usuario final serán todas aquellas personas dueñas de una alacena.
  
 \end{itemize}
 
@@ -186,19 +184,20 @@ Usuario final &  Acreedores de alacena                 &              	&        
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-El propósito de este proyecto es impulsar nuevas tecnologías dentro del hogar mediante la modernización de uno de los lugares que más se utiliza dentro del mismo, posibilitando una mejor gestión de los distintos productos que se guardan dentro. Gracias a esta nueva metodología se busca que los usuarios encuentren una nueva forma mucho mas sencilla y eficiente de la toma de decisiones en las compras cotidianas.
+El propósito de este proyecto es impulsar nuevas tecnologías dentro del hogar mediante la modernización de uno de los lugares que más se utiliza dentro del mismo, posibilitando una mejor gestión de los distintos productos que se guardan dentro. Gracias a esta nueva metodología se busca que los usuarios encuentren una nueva forma mucho más sencilla y eficiente de la toma de decisiones en las compras cotidianas.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-En ese proyecto se incluye :
+En el proyecto se incluye :
 
 \begin{itemize}
-	\item Un dispositivo que detecta los objetos a través de una lectura del código de barras
-	\item Ese dispositivo debe poder detectar de qué objeto se trata, y luego llevar a cabo las cuentas relacionadas al inventario.
- 	\item El desarrollo de una interfaz externa al dispositivo, a modo de consultar/configurar aspectos del dispositivo, tales como el inventario.
+	\item El desarrollo de un dispositivo que detecta los objetos a través de una lectura del código de barras.
+	\item Es desarrollo del dispositivo debe tener la capacidad para detectar de qué objeto se trata, y luego llevar a cabo el conteo relacionadas al inventario.
+ 	\item El desarrollo de una interfaz externa al dispositivo que permita consultar el estado del inventario.
+  \item La misma interfaz debe tener la capacidad para configurar el dispositivo.
   \item El desarrollo de una placa integrada como prototipo.
-  \item La configuración red para que el dispositivo pueda utilizar APIs para consultar el código de barras.
+  \item La configuración de red para que el dispositivo pueda utilizar APIs para consultar el código de barras.
   \item El sistema de alimentación propio del prototipo.
   
 \end{itemize}
@@ -206,7 +205,7 @@ En ese proyecto se incluye :
 No serán parte del proyecto los siguientes:
 
 \begin{itemize}
-	\item No se desarrollara un producto final para ser comercializado.
+	\item No se desarrollará un producto final para ser comercializado.
 	\item No se contemplará almacenamiento externo o almacenamiento en la nube.
   
 \end{itemize}
@@ -224,111 +223,175 @@ Para el desarrollo del presente proyecto se supone que:
   
 \end{itemize}
 
--Hasta aquí primera entrega-
 \newpage
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible estar agruparlos por afinidad, por ejemplo:
+
+A continuación se enumerarán los requerimientos del proyecto:
 
 \begin{enumerate}
-	\item Requerimientos funcionales
+	\item Requerimientos generales del sistema
 		\begin{enumerate}
-			\item El sistema debe...
-			\item Tal componente debe...
-			\item El usuario debe poder...
+			\item El sistema debe detectar cuando se ingresa o se egresa un objeto de la despensa.
+			\item El sistema debe tener la capacidad de identificar de qué objeto se trata.
+			\item El sistema debe llevar a cabo un conteo de los objetos que ingresan y/o egresan.
+    \item El sistema debe almacenar el inventario de forma local.
+    \item El sistema debe tener una aplicación web/móvil para poder consultar el inventario en tiempo real.
+           
 		\end{enumerate}
-	\item Requerimientos de documentación
+	\item Requerimientos de Hardware
 		\begin{enumerate}
-			\item Requerimiento 1
-			\item Requerimiento 2 (prioridad menor)
+			 \item El módulo deberá alimentarse a través de una batería.
+			\item El módulo deberá poder comunicarse utilizando el Estándar IEEE 802.11 b/g/n
+(WiFi).
+            \item El módulo deberá poder comunicarse utilizando Bluetooth Low Energy (BLE).
+            \item El módulo utilizará un único chip que integre el microprocesador y la conectividad WiFi/Bluetooth.
+            \item El módulo deberá comunicarse vía API a la red para identificar el producto.
+            \item El módulo deberá detectar los códigos de barras mediante un lector apropiado o cámara fotográfica.
 		\end{enumerate}
-	\item Requerimiento de testing...
-	\item Requerimientos de la interfaz...
-	\item Requerimientos interoperabilidad...
-	\item etc...
+	\item Requerimiento de firmware
+         \begin{enumerate}
+            \item El firmware del módulo deberá ser programado en lenguaje C.
+            \item Se realizarán tests de forma independiente para cada módulo, y de integración para cada una de las funcionalidades del mismo.
+            \item El firmware deberá priorizar el ahorro energético. 
+         \end{enumerate}
+	\item Requerimientos de Gestión
+        \begin{enumerate}
+            \item Se utilizará un repositorio público en Github como sistema de control de versiones.
+         \end{enumerate}
+	
 \end{enumerate}
-
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
-	\item Ser específico: no dejar lugar a confusiones.
-	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
-\end{consigna}
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-\begin{consigna}{red}
-Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
+En esta sección se enuncian las historias de usuario, asignándoles a cada una un puntaje según los siguientes aspectos:
+    \begin{enumerate}
+        \item Dificultad de la tarea/trabajo.
+        \item Complejidad del trabajo.
+        \item Riesgo asociado.
+    \end{enumerate}
 
-El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
+Para asignarles la ponderación, se utilizará una escala siguiendo la serie de Fibonacci, para lo cual un número mayor implica un mayor costo. Para calcular el Story Point, se sumarán las tres ponderaciones asignadas, y en caso de que el resultado no pertenezca a la serie, se le asignará el número superior más cercano.
 
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia
-\end{consigna}
+\begin{enumerate}
+    \item Como usuario quiero instalar el producto de forma sencilla.
+        \begin{itemize}
+            \item Dificultad: 5
+            \item Complejidad: 5
+            \item Riesgo: 8
+            \item Story Point: 21
+        \end{itemize}
+
+     \item Como usuario no quiero estar pendiente de cambiar/recargar la batería.
+        \begin{itemize}
+            \item Dificultad: 13
+            \item Complejidad: 13
+            \item Riesgo: 3
+            \item Story Point: 34
+        \end{itemize}
+
+    \item Como usuario quiero una interfaz de usuario sencilla.
+        \begin{itemize}
+            \item Dificultad: 2
+            \item Complejidad: 3
+            \item Riesgo: 5
+            \item Story Point: 13
+        \end{itemize}
+
+    \item Como usuario quiero consultar mi inventario en todo momento.
+        \begin{itemize}
+            \item Dificultad: 3
+            \item Complejidad: 8
+            \item Riesgo: 2
+            \item Story Point: 13
+        \end{itemize}
+    \item Como usuario quiero que el producto sea lo más pequeño posible.
+        \begin{itemize}
+            \item Dificultad: 13
+            \item Complejidad: 8
+            \item Riesgo: 5
+            \item Story Point: 34
+        \end{itemize}
+\end{enumerate}
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
-\begin{consigna}{red}
 
-Los entregables del proyecto son (ejemplo):
+Los entregables del proyecto son:
 
 \begin{itemize}
-	\item Manual de uso
 	\item Diagrama de circuitos esquemáticos
-	\item Código fuente del firmware
-	\item Diagrama de instalación
-	\item Informe final
-	\item etc...
+	\item Código fuente del programa.
+	\item Guía de usuario.
+	\item Diagrama PCB.
+	\item Archivos de fabricación.
 \end{itemize}
 
-\end{consigna}
 
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{consigna}{red}
-El WBS debe tener relación directa o indirecta con los requerimientos.  Son todas las actividades que se harán en el proyecto para dar cumplimiento a los requerimientos. Se recomienda mostrar el WBS mediante una lista indexada:
+A continuación se listan las tareas, junto con su duración es (en horas de trabajo):
 
 \begin{enumerate}
-\item Grupo de tareas 1
+\item Planificación y gestión del proyecto (80 hs):
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas h)
+	\item Realizar un plan de trabajo (10 hs)
+	\item Determinar componentes (10 hs)
+    \item Planificar la programación del firmware (20 hs)
+	\item Redactar informes y presentaciones (30 hs)
+    \item Redactar guía de usuario y otros documentos afines (10 hs)
 	\end{enumerate}
-\item Grupo de tareas 2
+\item Investigación previa (125 hs)
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
+	\item Investigar soluciones propuestas similares (20 hs)
+	\item Investigar microcontroladores (10 hs)
+	\item Investigar componentes periféricos afines (20 hs)
+    \item Investigar el estándar de código de barras (10 hs)
+    \item Investigar métodos de lectura de códigos de barra (30 hs)
+    \item Investigar librerías y APIs afines (15 hs)
+    \item Investigar protocolos WiFi y BLE (20 hs)
 	\end{enumerate}
-\item Grupo de tareas 3
+\item Desarrollo de Software (130 hs)
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
-	\item Tarea 4 (tantas h)
-	\item Tarea 5 (tantas h)
+	\item Desarrollo de drivers específicos para cada periférico (25 hs)
+	\item Integración de drivers y librerías (15 hs)
+	\item Elaborar máquina de estados para el flujo del programa (10 hs)
+	\item Desarrollo de interfaz de usuario (30 hs)
+    \item Implementación de FreeRTOS y Low Power Consumption (30 hs)
+    \item Optimización del código (20 hs)
+	\end{enumerate}
+ \item Desarrollo de Hardware (145 hs)
+	\begin{enumerate}
+	\item Elección del microcontrolador (5 hs)
+	\item Elección del sensor de código de barras (5 hs)
+    \item Elección de integrados para los módulos WiFi y BLE (10 hs)
+	\item Ensamblado de prototipo funcional (5 hs)
+	\item Diseño del circuito electrónico final (30 hs)
+    \item Diseño del PCB final (30 hs)
+    \item Generar archivos de fabricación (40 hs)
+    \item Optimización (20 hs)
+	\end{enumerate}
+ \item Fabricación de prototipo (60 hs)
+	\begin{enumerate}
+	\item Fabricado de la placa (10 hs)
+	\item Compra de componentes (5 hs)
+	\item Ensamblado de componentes (15 hs)
+	\item Diseño y fabricación de la caja (30 hs)
+	\end{enumerate}
+  \item Pruebas, ensayos y validaciones (70 hs)
+	\begin{enumerate}
+	\item Ensayos de señales eléctricas (10 hs)
+	\item Pruebas de comunicaciones WiFi y BLE (10 hs)
+	\item Pruebas generales de integración (20 hs)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas h)
-
-Se recomienda que no haya ninguna tarea que lleve más de 40 h. 
-
-\end{consigna}
+Cantidad total de horas: (610 h)
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}

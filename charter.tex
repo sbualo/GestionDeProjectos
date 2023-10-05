@@ -20,11 +20,11 @@ codirector, % Uncomment to add a codirector to the title page
 \autor{Ing. Santiago Andrés Bualó} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Mgs. Ing. Matías Brignone}
-\pertenenciaDirector{pertenencia} 
+\director{Mg. Ing. Matías Brignone}
+
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
-\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
-\pertenenciaCoDirector{FIUBA}
+%\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
+%\pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
 \cliente{-}
@@ -71,7 +71,9 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Primera entrega                                  & 3 de septiembre de 2023 \\ \hline
 2      & Segunda entrega                                   &10 de septiembre de 2023\\ \hline
-1      & Tercera entrega                                  & 20 de septiembre de 2023 \\ \hline
+3      & Tercera entrega                                  & 20 de septiembre de 2023 \\ \hline
+4      & Cuarta entrega                                  & 27 de septiembre de 2023 \\ \hline
+5      & Corrección final                                  & 3 de octubre de 2023 \\ \hline
 %1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
@@ -95,7 +97,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de alacena inteligente capaz de mantener un inventario de los objetos dentro de la misma, detectando los productos que ingresan y egresan en tiempo real, y tendrá un presupuesto preliminar estimado de 620 h de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de alacena inteligente capaz de mantener un inventario de los objetos dentro de la misma, detectando los productos que ingresan y egresan en tiempo real, y tendrá un presupuesto preliminar estimado de 620 h de trabajo y 10247,5 USD, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -424,7 +426,7 @@ Todos los tiempos indicados están expresados en horas, y se puede observar un c
 A continuación se muestra la lista de tareas utilizada para realizar el diagrama de Gantt. Se consideró una semana de trabajo de 5 días, entendiendo que los días sábado y domingo no son laborables.
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=\textwidth]{./Figuras/Lista.png}
+\includegraphics[width=0.91\textwidth]{./Figuras/Lista.png}
 \caption{Diagrama del \textit{Listado de tareas}.}
 \label{fig:AoN}
 \end{figure}
@@ -509,40 +511,40 @@ Administración &
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-A continuación se listan los principales riesgos asociados al proyecto, junto con sus estimaciones de sus consecuencias:
+A continuación se listan los principales riesgos asociados al proyecto junto con su descripción,  utilizando una escala numérica a modo tal de que 1 representa riesgo mínimo, mientras que 10 representa un riesgo máximo:
  
-Riesgo 1: Imposibilidad para cumplir los plazos del proyecto.
+Riesgo 1: imposibilidad para cumplir los plazos del proyecto.
 \begin{itemize}
-	\item Severidad (S):8, retrasaría los plazos de entrega del proyecto, lo que intrínsecamente implica un costo adicional.\\
-	\item Probabilidad de ocurrencia (O):7, además de ser un proyecto personal, todo el trabajo relacionado va a ser realizado por una única persona.\\
+	\item Severidad (S): 8, retrasaría los plazos de entrega del proyecto, lo que intrínsecamente implica un costo adicional.\\
+	\item Probabilidad de ocurrencia (O): 7, además de ser un proyecto personal, todo el trabajo relacionado va a ser realizado por una única persona.\\
 \end{itemize}   
 
-Riesgo 2: Errores de diseño del prototipo
+Riesgo 2: errores de diseño del prototipo
 \begin{itemize}
 	\item Severidad (S): 6, generaría retrasos e implicaría un costo mayor para el prototipo, producto de los reintentos.
 	\item Ocurrencia (O): 5, si bien el prototipo es novedoso, los requerimientos no son excesivamente rigurosos.
 \end{itemize}
 
-Riesgo 3: Demora en la adquisición de componentes
+Riesgo 3: demora en la adquisición de componentes
 \begin{itemize}
-	\item Severidad (S):9 , existen pocas alternativas a los dispositivos que se requieren para realizar el proyecto, siendo el lector de código de barras indispensable e irreemplazable.
+	\item Severidad (S): 9 , existen pocas alternativas a los dispositivos que se requieren para realizar el proyecto, siendo el lector de código de barras indispensable e irreemplazable.
 	\item Ocurrencia (O): 6, el contexto país no es tan favorable y presta a varios posibles problemas desde el envío del componente hasta la forma de pago.
 \end{itemize}
 
-Riesgo 4: Falta de documentación de los periféricos o bibliotecas a utilizar
+Riesgo 4: falta de documentación de los periféricos o bibliotecas a utilizar
 \begin{itemize}
-	\item Severidad (S):5 , al ser dispositivos/bibliotecas dedicadas, es posible que su documentación no sea clara
+	\item Severidad (S): 5 , al ser dispositivos/bibliotecas dedicadas, es posible que su documentación no sea clara.
 	\item Ocurrencia (O): 3, son dispositivos utilizados de forma masiva.
 \end{itemize}
 
 Riesgo 5: Problemas en el diseño de la interfaz gráfica.
 \begin{itemize}
-	\item Severidad (S):3 , no influye en el funcionamiento del prototipo, sino que es principalemte sería un encordio para los usuarios.
+	\item Severidad (S): 3 , no influye en el funcionamiento del prototipo, sino que es principalmente sería un encordio para los usuarios.
 	\item Ocurrencia (O): 4, no se tienen requerimientos rigurosos respecto al diseño de la interfaz, sino a la funcionalidad que otorga.
 \end{itemize}
 
 
-A continuación podemos observar la tabla de gestión de riesgo:
+A continuación se puede observar la tabla de gestión de riesgos:
 
 \begin{table}[htpb]
 \centering
@@ -552,26 +554,35 @@ A continuación podemos observar la tabla de gestión de riesgo:
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
       Imposibilidad para cumplir los plazos del proyecto. & 8  &  7 &  56  &   2 &  8  & 16     \\ \hline
       Errores de diseño del prototipo & 6  & 5  &  30   &   4 & 4   &16      \\ \hline
-      Demora en la adquisición de componentes &  9 & 6  & 54    &    &    &      \\ \hline
+      Demora en la adquisición de componentes &  9 & 6  & 54    & 4   &  6  &  24    \\ \hline
       Falta de documentación de los periféricos o bibliotecas a utilizar &  5 & 3  &  15   &    &    &      \\ \hline
       Problemas en el diseño de la interfaz gráfica. &  3 & 4  &   12  &  4  &  6  &  24    \\ \hline
 \end{tabularx}%
 \end{table}
 
 Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores o iguales a 30.
-A continuación se lista el plan de mitigación para cada tarea
+se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores o iguales a 30.
+A continuación se lista el plan de mitigación para cada tarea.
  
-Riesgo 1: Planificar de forma adecuada el desarrollo del proyecto, dando tiempos de espera correctos para cada tarea.
-  - Severidad (S):2 una correcta planificación mitiga los riesgos asociados a los tiempos de entrega.
-  - Probabilidad de ocurrencia (O): 8 Requiere de mucha disciplina seguir un plan de forma concisa.
+Riesgo 1: planificar de forma adecuada el desarrollo del proyecto, dando tiempos de espera correctos para cada tarea.
+\begin{itemize}
+    \item Severidad (S): 2 una correcta planificación mitiga los riesgos asociados a los tiempos de entrega.
+    \item Probabilidad de ocurrencia (O): 8 requiere de mucha disciplina seguir un plan de forma concisa.
+\end{itemize}
 
-Riesgo 2: Se va a dividir el prototipo en módulos independientes, de forma tal de poder evaluar a cada uno por separado, siendo mas sencillo analizar y detectar errores en cada uno.
-  - Severidad (S):4 Disminuye la complejidad del diseño.
-  - Probabilidad de ocurrencia (O): 4 Al ser módulos mas pequeños, suelen ser más sencillos y suelen tener objetivos claros, haciendo más difícil equivocarse.
-Riesgo 3: Se va a iniciar el proceso de adquisición de componentes lo más temprano posible, de forma tal de disponer de un mayor tiempo para que en caso de ser desfavorable, poder tomar otras medidas , como reemplazar el componente .
-  - Severidad (S):4 Al tener una ventana de tiempo mayor (y eventualmente una mayor variedad de componentes) puedo ir almacenando los componentes a medida que son recibidos, lo que permite ir adelantando trabajo según los componentes que vayan arribando.
-  - Probabilidad de ocurrencia (O): 6 Una cantidad de elementos mayo supone una mayor probabilidad, ya que aumenta la posibilidad de que al menos un componente se demore.
+Riesgo 2: se va a dividir el prototipo en módulos independientes, de forma tal de poder evaluar a cada uno por separado, siendo más sencillo analizar y detectar errores en cada uno.
+\begin{itemize}
+    \item Severidad (S): 4 disminuye la complejidad del diseño.
+    \item Probabilidad de ocurrencia (O): 4 al ser módulos más pequeños, suelen ser más sencillos y suelen tener objetivos claros, haciendo más difícil equivocarse.
+\end{itemize}
+
+
+Riesgo 3: Se va a iniciar el proceso de adquisición de componentes lo más temprano posible, de forma tal de disponer de un mayor tiempo para que en caso de ser desfavorable, poder tomar otras medidas , como reemplazar el componente.
+\begin{itemize}
+    \item Severidad (S): 4 al tener una ventana de tiempo mayor (y eventualmente una mayor variedad de componentes) es posible almacenar los componentes a medida que son recibidos, lo que permite ir adelantando trabajo según los componentes que vayan arribando.
+    \item  Probabilidad de ocurrencia (O): 6 una cantidad de elementos mayo supone una mayor probabilidad, ya que aumenta la posibilidad de que al menos un componente se demore.
+
+\end{itemize}
 
 
 
@@ -582,30 +593,30 @@ Riesgo 3: Se va a iniciar el proceso de adquisición de componentes lo más temp
 A continuación  se listan los principales requerimientos del proyecto, junto con sus acciones de verificación y validación para cada uno:
 
 \begin{itemize} 
-\item Req \#2.1: El módulo deberá alimentarse a través de una batería.
+\item Req \#2.1: el módulo deberá alimentarse a través de una batería.
 
 \begin{itemize}
-	\item Se verificarán las diferentes especificaciones de las distintas baterías disponible en el mercado, para adecuar el dispositivo a cada una.
+	\item Se verificarán las diferentes especificaciones de las distintas baterías disponibles en el mercado, para adecuar el dispositivo a cada una.
 	\item Se medirá el consumo energético mediante un multímetro, para que la batería no se agote de forma acelerada.   
 \end{itemize}
 
 
-\item Req \#2.2: El módulo deberá poder comunicarse mediante el estándar IEEE 802.11 b/g/n.
+\item Req \#2.2: el módulo deberá poder comunicarse mediante el estándar IEEE 802.11 b/g/n.
 
 \begin{itemize}
 	\item Se verificará que el periférico seleccionado cuente con las capacidades para realizar el estándar según lo indica la documentación de la norma vigente.
 	\item Se validará que el dispositivo pueda enviar paquetes de datos a través de esta vía.  
 \end{itemize}
 
-\item Req \#2.3: El módulo deberá poder comunicarse utilizando Bluetooth Low Energy.
+\item Req \#2.3: el módulo deberá poder comunicarse utilizando Bluetooth Low Energy.
 
 \begin{itemize}
 	\item Se verificará la documentación de la norma, para adecuar el dispositivo y su consumo energético a la norma.
-	\item Se validará que el dispositivo pueda conectarse de forma sostenida con un dispositivo móvil a través de bluetooth. 
+	\item Se validará que el dispositivo pueda conectarse de forma sostenida con un dispositivo móvil a través de Bluetooth. 
 \end{itemize}
 
 
-\item Req \#2.5: El módulo deberá comunicarse vía API a la red para identificar el producto.
+\item Req \#2.5: el módulo deberá comunicarse vía API a la red para identificar el producto.
 
 \begin{itemize}
 	\item Se verificará la documentación del servicio, junto con la especificación del lector para extraer el código de forma exitosa.
@@ -613,35 +624,35 @@ A continuación  se listan los principales requerimientos del proyecto, junto co
 \end{itemize}
 
 
-\item Req \#2.6: El módulo deberá detectar los códigos de barras mediante un lector apropiado o cámara fotográfica.
+\item Req \#2.6: el módulo deberá detectar los códigos de barras mediante un lector apropiado o cámara fotográfica.
 
 \begin{itemize}
 	\item Se verificarán los requisitos por el periférico para poder garantizar una lectura de código de forma exitosa en diferentes condiciones de iluminación, para así favorecer la versatilidad.
 	\item Se validará que el dispositivo sea capaz de detectar y leer códigos de forma exitosa en diferentes situaciones con diferentes intensidades de luz.
 \end{itemize}
 
-\item Req \#3.2: Se realizarán tests de forma independiente para cada módulo, y de integración para cada una de las funcionalidades del mismo.
+\item Req \#3.2: se realizarán tests de forma independiente para cada módulo, y de integración para cada una de las funcionalidades del mismo.
 
 \begin{itemize}
 	\item Se verificarán las especificaciones técnicas necesarias para cada módulo, de forma de lograr funcionalidades independientes para cada parte.
 	\item Se validará que cada módulo tenga su esquema de pruebas, para que cada uno garantice la funcionalidad independiente del prototipo integral.
 \end{itemize}
 
-\item Req \#3.3: El firmware deberá priorizar el ahorro energético.
+\item Req \#3.3: el firmware deberá priorizar el ahorro energético.
 
 \begin{itemize}
 	\item Se verificará la documentación del microprocesador, de forma tal de optimizar el manejo energético a lo largo del código.
 	\item Se validará su consumo medio, mediante la medición de la corriente que consume el módulo.
 \end{itemize}
 
-\item Req \#1.3: El sistema debe llevar a cabo un conteo de los objetos que ingresan y/o egresan.
+\item Req \#1.3: el sistema debe llevar a cabo un conteo de los objetos que ingresan y/o egresan.
 
 \begin{itemize}
 	\item Se verificará que el dispositivo sea capaz de que una vez identificado el objeto, entienda la acción que ocurrió (se agregó o se sacó) y en base a eso actualice el stock.
 	\item Se validará mediante la repetición de ingresos y egresos para un número determinado de objetos.
 \end{itemize}
 
-\item Req \#1.4: El sistema almacenará el inventario de forma local.
+\item Req \#1.4: el sistema almacenará el inventario de forma local.
 
 \begin{itemize}
 	\item Se verificará que la cantidad de objetos detectados proveniente de la API, coincida con la cantidad de códigos almacenados.
@@ -663,7 +674,7 @@ A continuación se establecen las pautas para realizar la evaluación final del 
 	 - Evaluación de las tareas y los tiempos: se confexionará una tabla en la cual se compararán las tareas propuestas con las realizadas y los tiempos propuestos frente a los reales. Se calcularán los desvíos, identificando sus principales causas.\\
   - Evaluación de costos: Se realizará una comparación entre los costos estimados frente a los costos resultantes luego de terminar el proyecto, de forma tal de que en caso de existir diferencias, identificar el porqué.
 	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron y cómo se solucionaron:
-	 - \authorname será el encargado de realizar  un informe identificando las técnicas y procedimientos que hayan resultado beneficiosos como perjudiciales para el desarrollo del proyecto.
+	 - \authorname \ será el encargado de realizar  un informe identificando las técnicas y procedimientos que hayan resultado beneficiosos como perjudiciales para el desarrollo del proyecto.
 	\item Se invitará a la presentación del proyecto final a todas aquellas personas que hayan contribuido en alguna forma con el  proyecto. Allí se agradecerá al director y del proyecto, a jurados, compañeros, docentes y autoridades de la Carrera de Especialización en Sistemas Embebidos.
 \end{itemize}
 
